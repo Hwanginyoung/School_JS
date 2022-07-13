@@ -2,12 +2,12 @@ package shop.vo;
 
 public class ClientVo {
 	private int clientId;
-	private int clientIp;
+	private String clientIp;
 	private int clientName;
 	private ClientType clientType;
 	public ClientVo() {}
 	
-	public ClientVo(int clientId, int clientIp, int clientName, ClientType clientType) {
+	public ClientVo(int clientId, String clientIp, int clientName, ClientType clientType) {
 		super();
 		this.clientId = clientId;
 		this.clientIp = clientIp;
@@ -20,7 +20,7 @@ public class ClientVo {
 		return clientId;
 	}
 
-	public int getClientIp() {
+	public String getClientIp() {
 		return clientIp;
 	}
 
@@ -36,7 +36,7 @@ public class ClientVo {
 		this.clientId = clientId;
 	}
 
-	public void setClientIp(int clientIp) {
+	public void setClientIp(String clientIp) {
 		this.clientIp = clientIp;
 	}
 
